@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/views/screens/add_task_screen.dart';
 import 'package:todo_app/views/screens/home_screen.dart';
 import 'package:todo_app/views/screens/splash_screen.dart';
 
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const SplashScreen(),
       routes: {
-        'home': (context) =>  HomeScreen(),
+        'home': (context) =>  const HomeScreen(),
+        'addTask' :(context) => const AddTaskScreen()
       },
     );
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/const/app_colors.dart';
 import 'package:todo_app/const/app_sizes.dart';
+import 'package:todo_app/views/widgets/add_task_sheet.dart';
 
 class AddNewTaskButton extends StatelessWidget {
   const AddNewTaskButton({super.key});
@@ -13,12 +14,14 @@ class AddNewTaskButton extends StatelessWidget {
         width: double.infinity,
         height: 40,
         child: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () => Navigator.of(context).pushNamed('addTask'),
           shape: const RoundedRectangleBorder(),
           backgroundColor: AppColors.SECONDARY_COLOR,
           child: const Text(
             'Add New Task',
-            style: TextStyle(fontSize: AppSizes.SUB_HEADING_FONT_SIZE, color: AppColors.PRIMARY_COLOR),
+            style: TextStyle(
+                fontSize: AppSizes.SUB_HEADING_FONT_SIZE,
+                color: AppColors.PRIMARY_COLOR),
           ),
         ),
       ),
