@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:todo_app/const/app_colors.dart';
 import 'package:todo_app/views/widgets/btn_primary.dart';
 import 'package:todo_app/views/widgets/spacing.dart';
 
@@ -10,22 +10,21 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.white,
+        color: AppColors.PRIMARY_COLOR,
         child: Padding(
           padding: const EdgeInsets.only(left: 24, right: 14),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Spacing(space: 120),
-              Text(
+              const Text(
                 'Welcome !',
                 style: TextStyle(
-                  // color: Colors.black,
                   fontSize: 46,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Opacity(
+              const Opacity(
                 opacity: .5,
                 child: Text(
                   'Effortlessly Manage Your Tasks',

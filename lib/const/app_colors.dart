@@ -1,3 +1,7 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
-const Color appBackgroundColor = Color.fromARGB(255, 237, 235, 229);
+class AppColors {
+  static const Color PRIMARY_COLOR = Colors.white;
+  static const Color SECONDARY_COLOR = Colors.black;
+  static const Color ACCENT_COLOR = Colors.grey;
+}
