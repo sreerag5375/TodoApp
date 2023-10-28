@@ -112,7 +112,7 @@ class TodoItemList extends StatelessWidget {
           padding: EdgeInsets.zero,
           itemBuilder: (ctx, index) {
             return Container(
-              color: const Color.fromARGB(255, 210, 194, 212),
+              color: Color.fromARGB(255, 205, 201, 201),
               child: const ListTile(
                 title: Text('Design home screen ui'),
                 subtitle: Text('design and implement to home screen basic ui'),

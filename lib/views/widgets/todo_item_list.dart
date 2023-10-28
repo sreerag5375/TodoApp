@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/const/app_colors.dart';
 import 'package:todo_app/views/widgets/spacing.dart';
 
 class TodoItemList extends StatelessWidget {
@@ -11,7 +12,7 @@ class TodoItemList extends StatelessWidget {
         child: ListView.separated(
             itemBuilder: (context, index) {
               return Container(
-                color: Color.fromARGB(255, 210, 194, 212),
+                color: Color.fromARGB(255, 230, 16, 16),
                 child: const ListTile(
                   title: Text('Design home screen ui'),
                   subtitle:
